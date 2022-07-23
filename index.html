@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartUp</title>
+    <!-- Connecting css-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- Adding Icon-->
+    <link rel="icon" href="img/header-bg.png" />
+  </head>
+  <body>
+    <section>
+      <div class="section1">
+        <div id="to_hide" class="navbar_hide" >
+          <h2 class="navbar_title">Adventure</h2>
+          <ul class="navbar_list">
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>Team</li>
+            <li>Explore</li>
+            <li><button>Contact</button></li>
+          </ul>
+          <img src="img/menu-btn.png" alt="Image" onclick="myFunction(this)" />
+        </div>
+        <div class="main">
+          <h3 class="main_title">Explore the Colorful World</h3>
+          <div class="main_line"></div>
+          <h1 class="main_heading">A WONDERFUL GIFT</h1>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="event_heading">
+        <h2>Upcoming Events</h2>
+        <div class="main_line"></div>
+      </div>
+      <div class="event_details">
+        <div>
+          <img src="img/img1.png" alt="Image" />
+          <h3>Everest Camp Track</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            tenetur mollitia inventore rem voluptates!
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div>
+          <img src="img/img2.png" alt="Image" />
+          <h3>Walking Holidays</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            tenetur mollitia inventore rem voluptates!
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours_sec">
+      <div class="tours_sec_part1">
+        <h1>UPCOMING TOURS & DESTINATION</h1>
+        <div class="main_line"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          iusto vitae animi qui eos architecto, rem sequi voluptatum amet enim
+          voluptas aliquid ea totam, voluptate impedit dolores dolorem alias
+          repellendus id odit a quae ipsam. Animi amet optio deserunt assumenda?
+        </p>
+        <div><button>Learn More</button></div>
+      </div>
+      <div class="tours_sec_part2">
+        <img src="img/img3.png" alt="Image">
+        <img src="img/img4.png" alt="Image">
+        <img src="img/img5.png" alt="Image">
+        <img src="img/img6.png" alt="Image">
+
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <p>123 Fifth Avenue, NY 10160, New York, USA | </p>
+        <p>Phone : 800-123-456 | </p>
+        <p>Email: contact@gamil.com</p>
+      </div>
+      <p>
+        Copyright @ 2022 Outdoor Adventure
+      </p>
+    </footer>
+
+    <script>
+      let hide = true;
+      function myFunction(e) {
+        if(hide){
+          document.getElementById("to_hide").classList.toggle("navbar");
+          // document.getElementsByClassName("navbar_hide").classList.toggle("navbar");
+          // = false;
+        }
+        else{
+          document.getElementById("to_hide").classList.toggle("navbar_hide");
+         // hide = true;
+        }
+      }
+    </script>
+
+  </body>
+</html>

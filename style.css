@@ -1,0 +1,283 @@
+body {
+  font-family: Poppins, sans-serif;
+  overflow-x: hidden;
+}
+html {
+  margin: -0.5rem;
+}
+:root{
+  --primary-button: tomato;
+  --primary-contrast: rgb(47, 66, 85)
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  background-image: url("/img/header-bg.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 101.2vh;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3vh 1vw;
+  
+}
+.navbar_hide{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3vh 1vw;
+}
+
+
+.navbar_hide img{
+  
+  width: 35px;
+  height: 30px;
+}
+.navbar_title {
+  margin-left: 10px;
+}
+.navbar_list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_list li {
+  margin: 0 2vw;
+}
+.navbar_list li:hover {
+  color: var(--primary-button);
+  text-decoration: underline 2px var(--primary-button);
+  transition: all 1000ms ease-in-out;
+  text-underline-offset: 4px;
+}
+
+.navbar_hide img{
+  width: 35px;
+  height: 30px;
+  display: none;
+}
+
+.navbar img{
+  width: 35px;
+  height: 30px;
+  display: none;
+
+}
+.active {
+  color: var(--primary-button);
+  text-decoration: underline 2px var(--primary-button);
+  text-underline-offset: 4px;
+}
+
+button {
+  background-color: var(--primary-button);
+  width: 100px;
+  height: 30px;
+  font-weight: 100;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: white;
+}
+.main_title {
+  font-size: 3vmin;
+  font-weight: 300;
+}
+
+.main_line {
+  width: 10vw;
+  height: 4px;
+  border-radius: 25px;
+  background-color: var(--primary-button);
+  margin: 1vh 0 3% 0;
+}
+
+.main_heading {
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.event_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.event_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event_details div{
+    margin: 0 20px;
+}
+.event_details div img{
+    display: inline-block;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.event_details div h3{
+    margin: 10px 0;
+}
+
+.event_details div p{
+    text-align: justify;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+}
+
+.tours_sec{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.tours_sec_part1{
+  width: 100%;
+}
+
+.tours_sec_part1 h1{
+  width: 40%;
+  font-size: 5vmin;
+}
+
+.tours_sec_part1 p{
+  margin: 20px 20px 20px 0;
+  text-align: justify;
+  
+}
+
+.tours_sec_part1 div{
+  width: 100%;
+  justify-content: center;
+  display: flex
+}
+.tours_sec_part1 .main_line{
+  
+  width: 10vw;
+}
+.tours_sec_part1 button{
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.tours_sec_part2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tours_sec_part2 img{
+  width: 50%;
+  padding: 10px;
+}
+
+.footer{
+  background-color: var(--primary-contrast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer div{
+  display: flex;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 540px) {
+  .tours_sec_part2 img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 944px){
+  .tours_sec{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 630px){
+  .navbar{
+    background-color: var(--primary-contrast);
+    height: 100vh;
+    border-bottom-right-radius: 30%;
+    
+  }
+
+  .navbar_hide ul{
+    visibility: hidden;
+  }
+
+  .navbar ul{
+    visibility: visible;
+  }
+
+  .navbar img{
+    display: inline-block;
+    visibility: visible;
+  }
+  .navbar_hide img{
+    display: inline-block;
+    visibility: visible;
+  }
+  
+  .navbar_list{
+    font-size: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar_list li button{
+    font-size: 24px;
+    width: 140px;
+    height: 40px
+  }
+}
+@media screen and (max-width: 670px) {
+    .event_details{
+      flex-direction: column;
+    }
+    .event_details div{
+      margin: 20px 0;
+    }
+}
+@media screen and (max-width: 800px) {
+  .footer div{
+    flex-direction: column;
+    align-items: center;
+  }
+}
